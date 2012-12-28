@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE squad SYSTEM "squad.dtd">
+<?xml-stylesheet href="squad.xsl?" type="text/xsl"?>
+<squad nick="blah blah blah">
+    <name>MySQuad</name>
+    <email>N/A</email>
+    <web>www.MySQuad.com</web>
+    <picture>logo.paa</picture>
+    <title>MySQuad</title>
+
+
+
+<member id="asdf" nick=""><name/><email/><icq/><remark/></member><member id="ddddd" nick=""><name></name><email></email><icq></icq><remark></remark></member></squad>

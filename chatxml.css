@@ -1,0 +1,50 @@
+* {
+	font-family:arial,helvetica;
+	font-size: 12px;
+	
+}
+
+h1 {
+	font-size:15px;
+}
+
+h2 {
+	font-size:14px;
+}
+
+body {
+	color: black;
+	background-color: white;
+}
+
+.keytext {
+	color: green;
+}
+
+.ab {
+	background-color:#eeeeee;
+}
+
+.ba {
+	background-color:#dddddd;
+}
+
+td {
+	padding:5px;
+	margin:0px;
+}
+
+.hrpart {
+	background-color:silver;
+	height:1px;
+	padding:0px;
+}
+
+.footer {
+	color: grey;
+	font-size: 10px;
+}
+
+.footer a {
+	font-size: 10px;
+}
