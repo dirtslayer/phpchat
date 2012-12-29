@@ -1,11 +1,33 @@
 @import url('http://fonts.googleapis.com/css?family=Text+Me+One');
+
+*:focus {
+    outline: none;
+}
+
 * {
 	font-family: 'Text Me One', sans-serif;
-}
-body
-{
 	background-color:black;
 	color: green;
+}
+div.user {
+    color: white;
+}
+div.txt {
+	
+    color: red;
+}
+input {
+background-color:#000033;
+border: 0px solid;
+color:white;
+}
+
+a {
+	text-decoration: none;
+}
+
+body
+{
 	margin:1em;
 	width:20em;
 	
@@ -14,7 +36,6 @@ div.chat {
 	overflow: hidden;
 }
 div.user {
-    color: white;
     clear: none;
     display: inline-block;
     width: 6em;
@@ -25,7 +46,6 @@ div.user {
 } 
 
 div.txt {
-    color: red;
     display: inline-block;
     margin: 0px;
     clear: right;
@@ -35,3 +55,4 @@ div.txt {
 form {
 	padding-top: 1em;
 }
+

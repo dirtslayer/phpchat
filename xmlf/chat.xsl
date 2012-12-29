@@ -24,6 +24,10 @@
             <xsl:value-of select="user" />
         </div>
         <div class="txt">
+        	<xsl:attribute name="style">
+        		color :
+        		<xsl:value-of select="txt/@color"></xsl:value-of>
+        	</xsl:attribute>
             <xsl:value-of select="txt" />
         </div>
 </div>
