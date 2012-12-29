@@ -1,13 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE squad SYSTEM "squad.dtd">
-<?xml-stylesheet href="squad.xsl?" type="text/xsl"?>
-<squad nick="blah blah blah">
-    <name>MySQuad</name>
-    <email>N/A</email>
-    <web>www.MySQuad.com</web>
-    <picture>logo.paa</picture>
-    <title>MySQuad</title>
-
-
-
-<member id="asdf" nick=""><name/><email/><icq/><remark/></member><member id="ddddd" nick=""><name></name><email></email><icq></icq><remark></remark></member></squad>
+<chat event="just for fun">
+    <msg>
+        <date>8 am</date>
+        <user>darrell</user>
+        <txt>hello world</txt>
+    </msg>
+    <msg>
+        <date>801 am</date>
+        <user>god</user>
+        <txt>i do not thing so</txt>
+    </msg>
+    <msg>
+        <date>804 am</date>
+        <user>darrell</user>
+        <txt>you mean think</txt>
+    </msg>
+    <msg>
+        <date>805 am</date>
+        <user>god</user>
+        <txt>no you fool</txt>
+    </msg>
+    <msg>
+        <date>806 am</date>
+        <user>darrell</user>
+        <txt>dog? what are the first 2 letters in fun?</txt>
+    </msg>
+</chat>

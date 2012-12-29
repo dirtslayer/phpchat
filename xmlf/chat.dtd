@@ -1,13 +1,8 @@
-<!ELEMENT squad (name, email, web?, picture?, title?, member+)>
-<!ATTLIST squad nick CDATA #REQUIRED>
+<!ELEMENT chat(msg+)>
+<!ATTLIST chat event CDATA #REQUIRED>
 
-<!ELEMENT member (name, email, icq?, remark?)>
-<!ATTLIST member id CDATA #REQUIRED nick CDATA #REQUIRED>
+<!ELEMENT msg (date,user,txt)>
 
-<!ELEMENT name (#PCDATA)>
-<!ELEMENT email (#PCDATA)>
-<!ELEMENT icq (#PCDATA)>
-<!ELEMENT web (#PCDATA)>
-<!ELEMENT picture (#PCDATA)>
-<!ELEMENT title (#PCDATA)>
-<!ELEMENT remark (#PCDATA)>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT user (#PCDATA)>
+<!ELEMENT text (#PCDATA)>

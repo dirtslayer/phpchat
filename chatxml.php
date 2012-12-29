@@ -1,19 +1,20 @@
 <?php
-
-INCLUDE 'setup.php' ; 
-INCLUDE ($langinclude) ;
-
-$xml = simplexml_load_file("$path_dir");
-//print_r ($xml);
-$rowColor = "ab";
-
+// display the current chat by reloading using jquery load
+// provide input box to submit to an addtxt.php
+// 
+// only reason this is php is to maintain a session
+// variable to retain name of chatter, hmm wondering
+// if jqery could handle that too, if somehow it
+// could fork a post and just clear the form text box
 ?>
 <html>
 <head>
 <title>Chat</title>
 <link rel="stylesheet" type="text/css" href="chatxml.css">
+<link jquery >
 </head>
 <body>
+
 <?php
 $indexOfChildOne = 0;
 echo '<table cellpadding="0" cellspacing="0" >';
