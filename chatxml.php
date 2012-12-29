@@ -6,6 +6,7 @@
 // variable to retain name of chatter, hmm wondering
 // if jqery could handle that too, if somehow it
 // could fork a post and just clear the form text box
+ session_start(); 
 ?>
 <html>
 <head>
@@ -25,8 +26,8 @@
 // hidden textbox on form, also set username cookie / session var:w
 -->
 <form name="input" action="chat_add.php" method="post">
-User <input type="text" name="user" maxlength="10" size="10">
-Says <input type="text" name="says" maxlength="70" size="70">
+<input type="text" value="<?php echo $_SESSION['user_name'] ?>" name="user" maxlength="10" size="10">
+Says <input autofocus="true" type="text" name="says" maxlength="70" size="70">
 <input type="submit" value="Submit">
 </form> 
 </form>
@@ -36,11 +37,14 @@ Says <input type="text" name="says" maxlength="70" size="70">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" ></script>
 <script>
+(function($){ $.fn.autofocus=function(){return (this.first().autofocus!==true)?this.focus():this;};})(jQuery);
 var timehandler = function () {
-    $('.chat').load("/chat.php?r=" + Math.random()*99999 + " .msgs " );
+    $('.chat').load("./chat.php?r=" + Math.random()*99999 + " .msgs ");
  } 
         var anotherhandler = function() { 
-            $('.chat').load("/chat.php?r=" + Math.random()*99999 + " .msgs "  );
+        	$('[autofocus]').autofocus();
+        	
+            $('.chat').load("./chat.php?r=" + Math.random()*99999 + " .msgs ", function() {$(document).scrollTop($(document).height());}  );
                     setInterval( timehandler, 5000); 
                      } 
 $(document).ready( anotherhandler );

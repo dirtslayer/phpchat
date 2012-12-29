@@ -3,7 +3,8 @@ body
 {
 	background-color:black;
 	color: green;
-	margin:1em;
+	margin:0px;
+	width:100px;
 }
 
 div.user {
