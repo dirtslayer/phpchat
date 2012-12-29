@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<chat event="just for fun">
+
+    
+    
+    
+    
+    <msg>
+        <date>8 am</date>
+        <user>darrell</user>
+        <txt>hello world</txt>
+    </msg>
+
+
+    <msg>
+        <date>8 am</date>
+        <user>darrell</user>
+        <txt>hello world</txt>
+    </msg>
+
+
+    <msg>
+        <date>8 am</date>
+        <user>darrell</user>
+        <txt>hello world</txt>
+    </msg>
+
+
+    <msg>
+        <date>8 am</date>
+        <user>darrell</user>
+        <txt>hello world</txt>
+    </msg>
+
+
+    <msg>
+        <date>801 am</date>
+        <user>god</user>
+        <txt>i do not thing so</txt>
+    </msg>
+    <msg>
+        <date>804 am</date>
+        <user>darrell</user>
+        <txt>you mean think</txt>
+    </msg>
+    <msg>
+        <date>805 am</date>
+        <user>god</user>
+        <txt>no you fool</txt>
+    </msg>
+    <msg>
+        <date>806 am</date>
+        <user>darrell</user>
+        <txt>dog? what are the first 2 letters in fun?</txt>
+    </msg>
+<msg>hi</

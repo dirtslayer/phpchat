@@ -1,50 +1,27 @@
-* {
-	font-family:arial,helvetica;
-	font-size: 12px;
-	
-}
 
-h1 {
-	font-size:15px;
-}
-
-h2 {
-	font-size:14px;
-}
-
-body {
-	color: black;
-	background-color: white;
-}
-
-.keytext {
+body
+{
+	background-color:black;
 	color: green;
+	margin:1em;
 }
 
-.ab {
-	background-color:#eeeeee;
-}
+div.user {
+    color: white;
+    clear: none;
+    display: inline-block;
+    width: 100px;
+    //overflow : hidden;
+   text-align: right;
+   margin : 0px;
+   padding-bottom: 10px;
+   padding-right: 5px;
+} 
+    div.txt {
+    color: red;
+    display: inline-block;
+    margin: 0px;
+    clear: right;
+   padding-bottom: 10px;
 
-.ba {
-	background-color:#dddddd;
-}
-
-td {
-	padding:5px;
-	margin:0px;
-}
-
-.hrpart {
-	background-color:silver;
-	height:1px;
-	padding:0px;
-}
-
-.footer {
-	color: grey;
-	font-size: 10px;
-}
-
-.footer a {
-	font-size: 10px;
 }

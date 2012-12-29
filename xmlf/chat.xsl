@@ -10,7 +10,9 @@
             <LINK REL="stylesheet" TYPE="text/css" HREF="./xmlf/chat.css"></LINK>
 	</HEAD>
         <BODY>
-            <xsl:apply-templates select="/chat/msg" />
+            <div class="msgs">
+                <xsl:apply-templates select="/chat/msg" />
+            </div>
 	</BODY>
 	</HTML>
 </xsl:template>
