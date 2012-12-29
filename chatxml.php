@@ -8,10 +8,12 @@
 // could fork a post and just clear the form text box
  session_start(); 
 ?>
+<!DOCTYPE html>
 <html>
 <head>
 <title>Chat</title>
 <link rel="stylesheet" type="text/css" href="chatxml.css">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
 </head>
 <body>
 
@@ -27,10 +29,10 @@
 -->
 <form name="input" action="chat_add.php" method="post">
 <input type="text" value="<?php echo $_SESSION['user_name'] ?>" name="user" maxlength="10" size="10">
-Says <input autofocus="true" type="text" name="says" maxlength="70" size="70">
+Says <input class="txtinput" autofocus="true" type="text" name="says" maxlength="70" >
 <input type="submit" value="Submit">
 </form> 
-</form>
+
 </div>
 
 
