@@ -19,7 +19,7 @@
 
 <form name="input" action="chat_add.php" method="post">
 <input type="text" value="<?php echo $_SESSION['user_name'] ?>" name="user" maxlength="10" size="10">
-<a id="colorpick" href="colorpick" style="color:<?php echo $_SESSION['color'] ?>">Says</a> <input class="txtinput" autofocus="true" type="text" name="says" maxlength="70" >
+<a id="colorpick" href="colorpick" style="color:<?php echo $_SESSION['color'] ?>">Says</a> <input class="txtinput" autofocus="true" type="text" name="says" maxlength="140" >
 <input style="display: none" id="colorhex" type="text" name="color" maxlength="10" value="<?php echo $_SESSION['color'] ?>" >
 <input type="submit" value="Submit">
 </form> 
