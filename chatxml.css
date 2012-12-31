@@ -30,8 +30,21 @@ body
 {
 	margin:1em;
 	width:20em;
-	
+	position : relative;
 }
+/*
+div.scrollcontainer {
+	overflow :auto;
+	position: absolute;
+	top : 0;
+	height: 100%;
+	width: 100%;
+}
+
+div.content {
+	padding: 1em;
+}
+*/
 div.chat {
 	overflow: hidden;
 }

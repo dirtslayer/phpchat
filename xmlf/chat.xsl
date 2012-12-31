@@ -1,20 +1,11 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <xsl:stylesheet
 	version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-
-        <!--   need to get the html5 header -->
+<xsl:output method = "xml" omit-xml-declaration="yes" />
 <xsl:template match="/">
-	<HTML>
-	<HEAD>
-            <TITLE><xsl:value-of select="/chat/@event"/></TITLE>
-            <LINK REL="stylesheet" TYPE="text/css" HREF="./xmlf/chat.css"></LINK>
-	</HEAD>
-        <BODY>
-            <div class="msgs">
+	        <div class="msgs">
                 <xsl:apply-templates select="/chat/msg" />
             </div>
-	</BODY>
-	</HTML>
 </xsl:template>
 
 <xsl:template match="/chat/msg">

@@ -1,0 +1,57 @@
+@import url('http://fonts.googleapis.com/css?family=Gafata');
+@import url('http://fonts.googleapis.com/css?family=Tangerine');
+
+body {
+	margin : 10px;
+	background-color: #203d63;
+	color: black;
+	font-family: 'Gafata', sans-serif;
+	font-size : 1.5em;
+	font-weight : 300;
+	background: #203d63;
+    width : 100%;
+}
+
+a {
+	text-decoration: none;
+	color:#2AD4FF;
+}
+
+a:hover {
+	color: #ffffff;
+}
+
+img.logo {
+	width: 100% ;
+    clear : both;
+}
+
+div.logodiv {
+	padding-right: 10px;
+	padding-bottom: 10px;
+	width: 40%;
+	float:left;
+}
+
+div.fb {
+	padding-top: 1em;
+	width: 300px;
+	height:100px;
+}
+
+div.fb-like-box {
+	width : 300px;
+	height: 100px;
+}
+div.contactlinks {
+	display: block;
+	overflow: hidden;
+	width : 55%;
+	padding-top: 10px;
+}
+dd {
+	margin:0px;
+}
+// #203d63 blue
+// #632b20 rust
+// #636120 olive
