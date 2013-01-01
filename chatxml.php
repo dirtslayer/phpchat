@@ -34,50 +34,46 @@
 
 <div id="w3cpicker"></div>
 <div id="bang"> . </div>
+
 </div>
 </div>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" ></script>
 <script>
 
 (function($){ $.fn.autofocus=function(){return (this.first().autofocus!==true)?this.focus():this;};})(jQuery);
+
+var glb_last_load = "now";
+var last_msg = "nower";
 var timehandler = function () {
-    $('.chat').load("./chat.php?r=" + Math.random()*99999 + " .msgs ");
-   // $("html, body").animate({ scrollTop: $("#bang").offset().top }, 2000);
-   $("html, body").animate({ scrollTop: $(document).height() - $(window).height()  }, 2000);
+	$.get("./lastmsg.php?r=" + Math.random()*99999, function(data) {
+  		last_msg = data;
+	});	
+	if ( last_msg == glb_last_load ) return false;
+	glb_last_load = last_msg;
+	$('.chat').load("./chat.php?r=" + Math.random()*99999 , function() {
+      		$("html, body").animate({ scrollTop: $(document).height() - $(window).height()  }, 2000);
+  	});
 } 
-var anotherhandler = function() { 
+$(document).ready( function() { 
 	$('[autofocus]').autofocus();
-    $('.chat').load("./chat.php?r=" + Math.random()*99999 + " .msgs ", function() {
-    	// $("#bang").offsetParent().scrollTop($("#bang").offset().top);
-    	// $("html, body").animate({ scrollTop: $("#bang").offset().top }, 1);
-    	$("html, body").animate({ scrollTop: $(document).height() - $(window).height()  }, 2000);
-    	
-    });
-   
- //  $(window).height();   // returns height of browser viewport
-//$(document).height(); // returns height of HTML document
-   
-   $("#colorpick").click( function (){
-   		$("#w3cpicker").load("./w3cpicker.html", function () {
-   				// $("#bang").offsetParent().scrollTop($("#bang").offset().top);
-   				//$("html, body").animate({ scrollTop: $("#bang").offset().top }, 2000);
-   				$("html, body").animate({ scrollTop: $(document).height() - $(window).height()  }, 2000);
-   				applyclickhandler();
-   		});
-   		return false;
-   });
-   
-   $("#namepick").click( function (){
-   		$("#w3cpicker").load("./namepicker.html", function () {
-   				// $("#bang").offsetParent().scrollTop($("#bang").offset().top);
-   				$("#nameinput").fadeIn("slow");
-   		});
-   		return false;
-   });
-   
-    setInterval( timehandler, 10000); 
-} 
-$(document).ready( anotherhandler );
+	 $('.chat').load("./chat.php?r=" + Math.random()*99999, function() {
+ 	$("html, body").animate({ scrollTop: $(document).height() - $(window).height()  }, 2000);   	
+});
+$("#colorpick").click( function (){
+	$("#w3cpicker").load("./w3cpicker.html", function () {
+   	$("html, body").animate({ scrollTop: $(document).height() - $(window).height()  }, 2000);
+		applyclickhandler();
+	});
+   	return false;
+});
+$("#namepick").click( function (){
+	$("#w3cpicker").load("./namepicker.html", function () {
+   		$("#nameinput").fadeIn("slow");
+   	});
+   	return false;
+});
+    setInterval( timehandler, 6000); 
+});
 
 </script>
 

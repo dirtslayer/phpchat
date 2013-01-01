@@ -7,7 +7,7 @@ $d = $msg->addChild("date");
 $u = $msg->addChild("user");
 $t = $msg->addChild("txt");
 date_default_timezone_set("America/Edmonton");
-$d[0][0] = date(DATE_RFC1036);
+$d[0][0] = time();
 $u[0][0] = utf8_encode($_POST["user"]);
 $t[0][0] = utf8_encode($_POST["says"]);
 $ta = $t->addAttribute("color",$_POST["color"]);
