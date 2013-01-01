@@ -16,22 +16,50 @@ div.txt {
 	
     color: red;
 }
+
 input {
-background-color:#000033;
-border: 0px solid;
-color:white;
+background-color:#003366;
+color: white;
+margin : 0;
+margin-top: .5em;
+padding : 0;
+width : 100%;
+border: 0;
+padding-top:.5em;
+padding-bottom:.5em;
+
 }
+
 
 a {
 	text-decoration: none;
+	width : 100%;
+	display : inline-block;
+	clear: both;
+padding-top:.5em;
+padding-bottom:.5em;
+	
 }
 
 body
 {
 	margin:1em;
 	width:20em;
-	
+	position : relative;
 }
+/*
+div.scrollcontainer {
+	overflow :auto;
+	position: absolute;
+	top : 0;
+	height: 100%;
+	width: 100%;
+}
+
+div.content {
+	padding: 1em;
+}
+*/
 div.chat {
 	overflow: hidden;
 }

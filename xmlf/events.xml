@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<events>
+	<event name="just for fun" status="on" security="none" id="001">
+		<date> on going </date>
+		<location> online </location>
+		<description> dj darrell and dj drew interactive </description>
+		<chatfilename> chat001.xml </chatfilename>
+	</event>
+	<event name="just for fun 2" status="off" security="login" id="002">
+		<date> on going </date>
+		<location> online </location>
+		<description> dj darrell and dj drew interactive with login </description>
+		<chatfilename> chat002.xml </chatfilename>
+		<php_passwdfilename> passwd002.php </php_passwdfilename>
+	</event>
+</events>
