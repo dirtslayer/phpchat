@@ -19,49 +19,54 @@
 	</head>
 
 	<body>
-		
-			<div class="logodiv" >
-							
-				<p>
-					php chat
-				</p>
-			</div>
+
+		<div class="logodiv" >
+
+			<h1>welcome to php chat</h1>
+			<p>an open source, open access chat program</p>
 			
-			<div class="contactlinks">
-				<nav>
+		</div>
+
+		<div class="contactlinks">
+			<nav>
 				<dt>
-					<a href="http://designr8.com">designr8.com</a> 
+					<a href="http://designr8.com">designr8.com</a>
 				</dt>
 				<dd>
-					<a href="http://designr8.com">designr8.com</a>
+					<a href="http://designr8.com">good bye!</a>
 				</dd>
-				
 				<dt>
 					<a href="mailto://darrell@designr8.com" id="emailref">email </a>
 				</dt>
-				<dd>	
-					<p>darrell@designr8.com</p>
+				<dd>
+					<p>darrell@designr8.com	</p>
 				</dd>
 				<dt>
-					<a href="/phpchat/chatxml.php" > php chat </a>
+					<a href="chatxml.php" >php chat</a>
 				</dt>
 				<dd>
-					<a href="/phpchat/chatxml.php" > php chat </a>
+					<a href="chatxml.php" >try it!</a>
 				</dd>
-				</nav>
-			</div>
 
-			
+				<dt>
+					<a href="https://github.com/semisided1/phpchat/">php chat source code </a>
+				</dt>
+				<dd>
+					<a href="https://github.com/semisided1/phpchat/">github</a>
+				</dd>
+			</nav>
+		</div>
+
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" ></script>
 		<script>
-			
-$(document).ready( function() {  $("dd:not(:last)").hide();
-$("dt a").click( function() {
-$("dd:visible").slideUp("slow");
-$(this).parent().next().slideDown("slow");
-return false;});});
-
-
+			$(document).ready(function() {
+				$("dd:not(:last)").hide();
+				$("dt a").click(function() {
+					$("dd:visible").slideUp("slow");
+					$(this).parent().next().slideDown("slow");
+					return false;
+				});
+			});
 
 		</script>
 	</body>
