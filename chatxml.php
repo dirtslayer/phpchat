@@ -20,13 +20,13 @@
 
 <form name="input" action="chat_add.php" method="post">
 
-<input type="text" style="display:none" id="colorhex"  name="color" value="<?php echo $_SESSION['color'] ?>" maxlength="10" >
+<input type="text" style="display:none" id="colorhex"  name="color" value="<?php echo $_SESSION['color'] ?>" maxlength="20" >
 
 <input class="txtinput" autofocus="true" type="text" name="says" maxlength="170" >
 <input class="submitbtn" type="submit" value="Submit" >
 
 <a id="namepick" href="namepick" style="color:<?php echo $_SESSION['color'] ?>">change your name, <?php echo $_SESSION['user_name'] ?> </a> 
-<input type="text" style="display:none" id="nameinput" name="user"  value="<?php echo $_SESSION['user_name'] ?>"  maxlength="10" >
+<input type="text" style="display:none" id="nameinput" name="user"  value="<?php echo $_SESSION['user_name'] ?>"  maxlength="20" >
 <a id="colorpick" href="colorpick" style="color:<?php echo $_SESSION['color'] ?>">select your color</a> 
 </form> 
 
