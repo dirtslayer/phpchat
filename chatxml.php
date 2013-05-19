@@ -23,7 +23,7 @@
 <input type="text" style="display:none" id="colorhex"  name="color" value="<?php echo $_SESSION['color'] ?>" maxlength="20" >
 
 <input class="txtinput" autofocus="true" type="text" name="says" maxlength="170" >
-<input class="submitbtn" type="submit" value="Submit" >
+<input class="submitbtn" type="submit" value="send msg" >
 
 <a id="namepick" href="namepick" style="color:<?php echo $_SESSION['color'] ?>">change your name, <?php echo $_SESSION['user_name'] ?> </a> 
 <input type="text" style="display:none" id="nameinput" name="user"  value="<?php echo $_SESSION['user_name'] ?>"  maxlength="20" >
